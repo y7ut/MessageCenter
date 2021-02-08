@@ -1,0 +1,19 @@
+{
+    "require": {
+        "swiftmailer/swiftmailer": "^6.2",
+        "php-di/php-di": "^6.2",
+        "monolog/monolog": "^2.1",
+        "ramsey/uuid": "^4.0",
+        "ext-redis": "*",
+        "symfony/dotenv": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "fix": "php-cs-fixer fix --diff",
+        "start": "php bin/start.php"
+    }
+}
